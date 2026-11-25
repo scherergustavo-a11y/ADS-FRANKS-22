@@ -21,4 +21,5 @@ jobs:
           echo "README.md encontrado"
 
       - name: Escrever resumo do job
-        run: echo "RA: 2026109400 | Commit: ${{ github.sha }}" >> "$GITHUB_STEP_SUMMARY"
+        run: |
+          echo "RA: 2026109400 | Commit: ${{ github.sha }}" >> "$GITHUB_STEP_SUMMARY"
